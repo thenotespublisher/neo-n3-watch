@@ -1,0 +1,55 @@
+{
+  "name": "neo-n3-watch",
+  "version": "1.0.0",
+  "description": "Real-time Neo N3 contract event monitor — stream on-chain notifications to your terminal",
+  "main": "dist/index.js",
+  "bin": {
+    "neo-n3-watch": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "neo",
+    "neo-n3",
+    "blockchain",
+    "smart-contract",
+    "events",
+    "notifications",
+    "cli",
+    "monitor",
+    "watch",
+    "nep-17"
+  ],
+  "author": "thenotespublisher",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thenotespublisher/neo-n3-watch"
+  },
+  "homepage": "https://github.com/thenotespublisher/neo-n3-watch#readme",
+  "bugs": {
+    "url": "https://github.com/thenotespublisher/neo-n3-watch/issues"
+  },
+  "dependencies": {
+    "@cityofzion/neon-js": "^5.6.1",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
